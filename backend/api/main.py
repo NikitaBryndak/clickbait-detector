@@ -16,7 +16,7 @@ else:
 model_components = joblib.load(model_path)
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app, resources={r"/*": {"origins": "*"}})# Enable CORS for all routes
 
 
 def translate_to_english(text):

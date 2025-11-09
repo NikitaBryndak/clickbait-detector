@@ -1,4 +1,14 @@
-.env
-.idea/
+# Ignore virtual environment
+venv/
+backend/api/venv/
+
+# Python cache
 __pycache__/
 *.pyc
+
+# Environment variables
+.env
+
+# System files
+.DS_Store
+Thumbs.db

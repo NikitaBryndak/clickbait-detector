@@ -47,10 +47,10 @@ async function predictClickbait(title) {
 async function waitForVideoTitleUpdate() {
     const titleElement = getVideoTitleElement();
     const title = titleElement ? titleElement.getAttribute('title') : null;
-    // console.log('Current title:', title);
+    console.log('Current title:', title);
 
     if (title) {
-        // console.log(title);
+        console.log(title);
 
         let result = await predictClickbait(title);
 

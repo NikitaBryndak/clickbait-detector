@@ -1,0 +1,76 @@
+body {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    padding: 16px;
+}
+
+.header h2 {
+    margin-top: 0;
+    color: #d32f2f; /* YouTube-like red */
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.status-panel {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 12px;
+}
+
+.status-panel h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Status Dots */
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.status-dot.waiting {
+    background-color: #ffc107;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.status-dot.healthy {
+    background-color: #4caf50; /* Green */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+.status-dot.error {
+    background-color: #f44336; /* Red */
+    box-shadow: 0 0 8px rgba(244, 67, 54, 0.5);
+}
+
+.info {
+    font-size: 11px;
+    color: #999;
+    text-align: center;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}

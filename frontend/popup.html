@@ -1,6 +1,28 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <h1>WIP</h1>
+<head>
+    <meta charset="UTF-8">
+    <title>Clickbait Detector</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Clickbait Detector</h2>
+        </div>
+        
+        <div class="status-panel">
+            <h3>API Status</h3>
+            <div id="api-status-indicator" class="status-item">
+                <span class="status-dot waiting"></span>
+                <span id="status-text">Checking connection...</span>
+            </div>
+        </div>
+
+        <div class="info">
+            <p>Backend: http://localhost:8000</p>
+        </div>
+    </div>
     <script src="popup.js"></script>
-  </body>
+</body>
 </html>
