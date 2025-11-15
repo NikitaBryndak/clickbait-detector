@@ -2,7 +2,7 @@ import joblib
 import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from utils import predict_clickbait
+from .utils import predict_clickbait
 from urllib.parse import unquote
 from langdetect import detect
 from deep_translator import GoogleTranslator
